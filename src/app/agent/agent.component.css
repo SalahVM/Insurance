@@ -1,0 +1,60 @@
+h2 {
+    color: seagreen;
+}
+h3 {
+    color: rgb(184, 28, 0);
+}
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 4px 0px;
+    display: inline-block;
+    border: 1px solid rgb(40, 187, 245);
+    border-radius: 20px;
+   
+    
+  }
+  
+  .button {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 8px 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: rgb(21, 168, 85);
+  }
+  h3 {
+      font-size: xx-large;
+      color: rgb(68, 40, 247);
+  }
+  .button1 {
+      padding: 15px 40px;
+  }
+  
+  div {
+    width: 400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px r;
+    border-radius: 30px;
+    /* background-image: url("https://images.pexels.com/photos/255379/pexels-photo-255379.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); */
+    padding-top: 20px;
+    padding: 20px 30px 20px;
+    text-align: center;
+    border-style: solid;
+    border-color: rgb(97, 125, 250);
+  }
+
+  label {
+      font-size: x-large;
+      font-family: sans-serif;
+      color: rgb(5, 81, 194);
+  
+     
+  }
