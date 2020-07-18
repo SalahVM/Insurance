@@ -1,33 +1,33 @@
-<h2>Welcome Agent</h2>
-<!-- <style>
 
-    </style>
-    <body> -->
-        
- <div>  
-    <label>Enter Insurance Number</label>
-<input type="text" 
-class="form-control"
-[(ngModel)]="InsuranceID">
 
-<button 
-class="button button1"
-(click)="onenterID()">Search</button>
-<p *ngIf="!status; else elseBlock">
+    <body>
+<div class="two">
+    <h2>Welcome Agent</h2>
+ <div class="one">  
+    <label><strong>Enter Insurance Number</strong></label>
+    <input type="text" 
+    class="form-control"
+    [(ngModel)]="InsuranceID">
+
+    <button 
+    class="button button3"
+    (click)="onenterID()"><strong>Search</strong></button>
+    <p *ngIf="!status; else elseBlock">
     Invalid ID
-</p>
-<ng-template #elseBlock>
+    </p>
+    <ng-template #elseBlock>
     <p>{{IDenterstatus}}<br>{{name}}<br>{{age}}<br>{{AnnualIncome}}</p>
-</ng-template>
-<!-- <div class="w3-show-inline-block"> -->
-      <button class="button"
-      (click)="approveclick()">Approve</button>
-      <button class="button"
-      (click)="declineclick()">Decline</button>
-<!-- </div> -->
-<!-- <div *ngIf="yesstatus">{{approveout}}</div>
-<div *ngIf="nostatus">{{declineout}}</div> -->
-<h3 *ngIf="yesstatus">{{approveout}}</h3>
-<h3 *ngIf="nostatus">{{declineout}}</h3>
-</div> 
-<!-- </body> -->
+    </ng-template>
+    <!-- <div class="w3-show-inline-block"> -->
+    <button class="button button1"
+    (click)="approveclick()"><strong>Approve</strong></button>
+    <button class="button button2"
+    (click)="declineclick()"><strong>Decline</strong></button>
+    <!-- </div> -->
+    <!-- <div *ngIf="yesstatus">{{approveout}}</div>
+    <div *ngIf="nostatus">{{declineout}}</div> -->
+    <h3 *ngIf="yesstatus">{{approveout}}</h3>
+    <h3 *ngIf="nostatus">{{declineout}}</h3>
+ </div> 
+</div>
+</body>

@@ -1,30 +1,87 @@
+<html>
 
-<style>
-        div.relative {
-          position: relative;
-          left: 30px;
-        }
-        h1 {
-                color: red;
-                text-align: center;
-        }
- </style>
- <h1>Welcome To Insurance Verification</h1>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+
  <div class="relative">
-<div class="row">
+
+                <img src="https://image.flaticon.com/icons/svg/2937/2937299.svg" width="50px" height="50px" style="float: right;">
+               
+                        <h1>Insurance Verification</h1>
+                        <button onclick="document.getElementById('id01').style.display='block'" style="float: right;">Login</button>
+                        <div id="id01" class="modal">
+                        <form class="modal-content animate" action="/action_page.php" method="post">
+                  <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                        <img src="https://image.flaticon.com/icons/svg/2919/2919600.svg" alt="Avatar" class="avatar">
+                   </div>
+
+                <div class="container">
+                <label for="uname"><b>Username</b></label>
+                <input type="text" placeholder="Enter Username" name="uname" required>
+
+                <label for="psw"><b>Password</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" required>
+        
+                <button class="button" style="width: 100%;"type="submit">Login</button>
+                <label>
+                <input type="checkbox" checked="checked" name="remember"> Remember me
+                </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+                </form>
+             </div>
+
+  <script>
+    // Get the modal
+    var modal = document.getElementById('id01');
+
+   // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+     }
+  }
+  </script>
+               
+
+       
+         
+  <div class="row">
+        <div class="icon-bar">
+                <a class="active" routerLink="/home"><i class="fa fa-home"></i></a>
+                <a class="active" routerLink="/doctors"><i class="fa fa-heart"></i></a> 
+                <a class="active" routerLink="/agents"><i class="fa fa-file"></i></a> 
+                <a class="active" style="float: right;"><i class="fa fa-bars"></i></a> 
+                <div class="scroll-left">
+                        <p>Your health and well-being are our priority.</p>
+                 </div>
+                 
+                </div>
+        
+                
+        
     <!-- <div class="col-md-5"> -->
-            <ul class="nav nav-tabs">
+            <!-- <div class="relative1">
+            <ul class="nav nav-tabs"> -->
                     <!-- <li role="presentation"> -->
-                    <a routerLink="/home">Home</a>
+                    <!-- <a routerLink="/home">Home</a> -->
                     <!-- </li> -->
                     <!-- <li role="presentation"> -->
-                    <a routerLink="/doctors">Doctor</a>
+                    <!-- <a routerLink="/doctors">Doctor</a> -->
                     <!-- </li> -->
                     <!-- <li role="presentation"> -->
-                    <a routerLink="/agents">Agent</a>
+                    <!-- <a routerLink="/agents">Agent</a> -->
                     <!-- </li> -->
-            </ul>
-          
+            <!-- </ul>
+        </div> -->
     <!-- </div> -->
+
+  </div>
 </div>
-</div>
+</html>
